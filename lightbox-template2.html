@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<title>Lightbox</title>
+</head>
+<body>
+	<button type="button" data-filter="all">All</button>
+		<button type="button" data-filter=".trans">Transportation</button>
+		<button type="button" data-filter=".mons">Monuments</button>
+        <button type="button" data-filter=".attr">City Attractions</button>
+        <button type="button" data-sort="random">Random</button>
+	<div class = "gallery">
+		<div class="mix mons" data-order="1">
+			<a href="images/india_gate.jpg" data-lightbox = "delhi" data-title = "India Gate in the evening."><img src="images/india_gate.jpg" alt = "India Gate"></a>
+		</div>
+		<div class="mix mons" data-order="2">
+			<a href="images/akshardham.jpg" data-lightbox = "delhi" data-title = "Akshardham Temple in the morning. It attracts 70 percent of all tourists who visit Delhi." ><img src="images/akshardham.jpg" alt= "Akshardham Temple in the morning."></a>
+		</div>
+		<div class="mix attr" data-order="3">
+			<a href="images/connaught_place.jpg" data-lightbox = "delhi" data-title = "A busy Connaught Place at night."><img src="images/connaught_place.jpg" alt = "A busy Connaught Place at night."></a>
+		</div>
+		<div class="mix trans attr" data-order="4">
+			<a href="images/delhi_metro.jpg" data-lightbox = "delhi" data-title = "A Delhi Metro train pulling up at a station."><img src="images/delhi_metro.jpg" alt = "A Delhi Metro train pulling up at a station."></a>
+		</div>
+		<div class="mix mons" data-order="5">
+			<a href="images/lotus_temple.jpg" data-lightbox = "delhi" data-title = "The Lotus Temple, a Bahá'í House of Worship, in a flowerlike shape in the day."  ><img src="images/lotus_temple.jpg" alt = "The Lotus Temple, a Bahá'í House of Worship, in a flowerlike shape in the day."></a>
+		</div>
+		<div class="mix attr" data-order="6">
+		<a href="images/nehru_stadium.jpg" data-lightbox = "delhi" data-title = "People watching an event at Nehru Stadium during the 2010 Commonwealth Games."><img src="images/nehru_stadium.jpg" alt = "People watching an event at Nehru Stadium during the 2010 Commonwealth Games."></a>
+		</div>
+		<div class="mix attr" data-order="7">
+		<a href="images/old_delhi.jpg" data-lightbox = "delhi" data-title = "A crowded street in Old Delhi at night."><img src="images/old_delhi.jpg" alt = "A crowded street in Old Delhi at night."></a>
+		</div>
+		<div class= "mix mons" data-order ="8">
+		<a href="images/qutub_minar.jpg" data-lightbox = "delhi" data-title = "Qutub Minar in the day. A 240 ft tower built in 1193 by the Delhi Sultanate. It became a UNESCO World Heritage Site in 1993."><img src="images/qutub_minar.jpg" alt = "Qutub Minar in the day. A 240 ft tower built in 1193 by the Delhi Sultanate. It became a UNESCO World Heritage Site in 1993."></a>
+		</div>
+		<div class = "mix mons" data-order = "9">
+		<a href="images/red_fort.jpg" data-lightbox = "delhi" data-title = "Red Fort in the afternoon. A towering Mughal fortress built in the 17th century that is made from red sandstone. It became a UNESCO World Heritage Site in 2007."><img src="images/red_fort.jpg" alt = "Red Fort in the afternoon. A towering Mughal fortress built in the 17th century that is made from red sandstone. It became a UNESCO World Heritage Site in 2007."> </a>
+		</div>
+	</div>
+	</div>
+
+
+<script src="js/lightbox.js"></script>
+<script src="js/mixitup.min.js"></script>
+ <script>
+            var containerEl = document.querySelector('.gallery');
+            var mixer = mixitup(containerEl);
+	</script>
+
+</body>
+</html>
